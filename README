@@ -1,0 +1,29 @@
+Name: Carol Li
+Partner: Shen Gao
+Email: xli160@u.rochester.edu
+Subject: CSC 172 Project 3
+Summary:
+This project require us to create a rudimentary mapping program in Java. Given a data set representing the
+roads and intersections in a specific geographic region, like our campus map, the Monroe county, and NY state. Our program should be able to plot a map of the data and
+provide shortest path directions between any two arbitrary intersections using Dijkstra’s algorithm.
+
+Information of each file:
+ur.txt/ nys.txt/ monroe.txt are given maps to graph on.
+In the Intersection(vertex) class: it store the Intersection ID, latitude, longitude. I did the intersection class and Shen checked if it works or not.
+In the Edge(road) class: it stores in the road ID, where the starting and ending points are. Shen did this part, and I checked if it works or not.
+In the Graph class, in order to change the different maps, you need to change the name by hard code in the text file we don't commend line.
+In the  Graph class we have two hashmaps which is used to store the intersection and the roads(edges) and we have the readFromFile method which helps us to put all the intersections and edges into the hashmaps.
+We also have our Dijkstra’s algorithm in there and we implemented it, we also calculated the distance by using the ‘haversine’ formula. Reference to the https://en.wikipedia.org/wiki/Haversine_formula.
+I mainly coded this class and Shen commented and checked this part whether or not it functions.
+Shen also did the GraphGUI. He sets the size for the JFrame and makes it visible. For the display method, we stored the data in
+JFrame. And the paint method would draw the map. The role of this for loop is to facilitate the accurate positioning of the
+text file data in the JFrame. And the draw method is to make the map visible to users.
+Main class is where you are going to run the program.
+
+Attention please:
+If the first time you run it and it doesn't show up, don't worry just run it again.
+Shen also customs the name of the map: "iMap Pro", hope it sounds as professional as Apple.
+Three of our maps graphs perfectly, and if your computer is slow, you can actually watch it to draw the each line.
+As you can tell, we also change the map color to "Rochester blue" which reflects our aesthetic and hope you like it!
+
+Thanks for the greater semester!
